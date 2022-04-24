@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: Aleo, serif;
+        @apply scroll-smooth bg-gradient-to-r from-[#FBE5E1] to-[#FDF4F2];
+    }
+    
+}
