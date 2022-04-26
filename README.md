@@ -3,4 +3,5 @@
 <p>Upcoming fixes:</p>
 <ul>
   <li>Sidebar needs scroll on click</li>
+  <li>Responsiveness</li>
 </ul>
