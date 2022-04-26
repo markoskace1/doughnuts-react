@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/doughnuts-react/static/css/main.47d4cd90.css",
-    "main.js": "/doughnuts-react/static/js/main.211d164b.js",
+    "main.js": "/doughnuts-react/static/js/main.c12b05ea.js",
     "static/media/doughnut1.png": "/doughnuts-react/static/media/doughnut1.602c1e8b45d756c774b7.png",
     "static/media/doughnut3.png": "/doughnuts-react/static/media/doughnut3.25994e813c62a2eb67e2.png",
     "static/media/doughnut2.png": "/doughnuts-react/static/media/doughnut2.51cd5d49138782a8421e.png",
     "index.html": "/doughnuts-react/index.html",
     "main.47d4cd90.css.map": "/doughnuts-react/static/css/main.47d4cd90.css.map",
-    "main.211d164b.js.map": "/doughnuts-react/static/js/main.211d164b.js.map"
+    "main.c12b05ea.js.map": "/doughnuts-react/static/js/main.c12b05ea.js.map"
   },
   "entrypoints": [
     "static/css/main.47d4cd90.css",
-    "static/js/main.211d164b.js"
+    "static/js/main.c12b05ea.js"
   ]
 }
