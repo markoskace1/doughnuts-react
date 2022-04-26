@@ -2,23 +2,27 @@ import React, { useState } from "react";
 import { doughnutsData } from "./doughnutsData";
 
 function Main() {
-  const [count, setCount] = useState(1);
+  const [items, setItems] = useState(doughnutsData);
 
   const incrementCount = (index) => {
-    setCount(count + 1);
+    const newItem = [...items];
+    newItem[index].quantity++;
+    setItems(newItem);
   };
 
-  const decrementCount = () => {
-    if (count > 1) {
-      setCount(count - 1);
+  const decrementCount = (index) => {
+    if (items[index].quantity >= 1) {
+      const newItem = [...items];
+      newItem[index].quantity--;
+      return setItems(newItem);
     } else {
-      setCount(1);
+      return items[index].quantity == 1;
     }
   };
 
   return (
     <main>
-      {doughnutsData.map((doughnut, index) => {
+      {items.map((doughnut, index) => {
         return (
           <section
             key={doughnut.id}
@@ -53,11 +57,11 @@ function Main() {
                 <div className="inline-flex space-x-6 rounded-18 text-dark-pink bg-white">
                   <div className="flex justify-center">
                     <button
-                      onClick={() => decrementCount()}
-                      disabled={count == 1}
+                      onClick={() => decrementCount(index)}
+                      disabled={doughnut.quantity == 1}
                       type="button"
                       className={
-                        count == 1
+                        doughnut.quantity == 1
                           ? "w-12 rounded-l-18 bg-slate-100"
                           : "hover:bg-dark-pink hover:text-white hover:rounded-l-18 w-12"
                       }
@@ -66,7 +70,7 @@ function Main() {
                     </button>
                   </div>
 
-                  <p>{count}</p>
+                  <p>{doughnut.quantity}</p>
                   <div className="flex justify-center ">
                     <button
                       onClick={() => incrementCount(index)}

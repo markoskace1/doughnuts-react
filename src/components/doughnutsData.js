@@ -9,6 +9,7 @@ export const doughnutsData = [
     sugar: "15g",
     fat: "9g",
     sodium: "95mg",
+    quantity: "1",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const doughnutsData = [
     sugar: "13g",
     fat: "12g",
     sodium: "80mg",
+    quantity: "1",
   },
   {
     id: 3,
@@ -31,5 +33,6 @@ export const doughnutsData = [
     sugar: "19g",
     fat: "11g",
     sodium: "85mg",
+    quantity: "1",
   },
 ];
