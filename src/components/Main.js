@@ -25,6 +25,7 @@ function Main() {
       {items.map((doughnut, index) => {
         return (
           <section
+            id={doughnut.id}
             key={doughnut.id}
             className="flex flex-col xl:flex-row container mx-auto items-center mt-24 xl:-mt-24 mb-12 xl:mb-0 justify-evenly h-screen "
           >
