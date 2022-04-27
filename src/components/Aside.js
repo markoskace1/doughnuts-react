@@ -4,7 +4,7 @@ import { doughnutsData } from "./doughnutsData";
 
 function Aside() {
   return (
-    <div className="fixed flex flex-col top-1/2 -mt-[110px] ml-16 w-22 gap-y-2">
+    <div className="fixed hidden md:flex flex-col top-1/2 -mt-[110px] ml-16 w-22 gap-y-2">
       {doughnutsData.map((item) => {
         return (
           <Link

@@ -1,5 +1,6 @@
 import React, { StrictMode } from "react";
 import Aside from "./components/Aside";
+import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 
@@ -9,8 +10,8 @@ function App() {
       <Navbar />
       <Aside />
       <Main />
+      <Footer />
     </StrictMode>
-    // attribution: <a href='https://www.freepik.com/vectors/sweet-bakery'>Sweet bakery vector created by smithytomy - www.freepik.com</a>
   );
 }
 

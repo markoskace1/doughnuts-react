@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll/modules";
+import { doughnutsData } from "./doughnutsData";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -85,7 +87,7 @@ function Navbar() {
         <div
           className={
             isOpen
-              ? "absolute xl:hidden text-center top-10 right-0 mt-8 py-4 px-16 text-lg items-center font-light rounded-18 shadow-lg bg-white"
+              ? "absolute container md:max-w-xs xl:hidden text-center top-10 right-0 mt-8 py-4 px-16 text-lg items-center font-light rounded-18 shadow-lg bg-white z-10"
               : "hidden"
           }
         >

@@ -27,7 +27,7 @@ function Main() {
           <section
             id={doughnut.id}
             key={doughnut.id}
-            className="flex flex-col xl:flex-row container mx-auto items-center mt-24 xl:-mt-24 mb-12 xl:mb-0 justify-evenly h-screen "
+            className="flex flex-col xl:flex-row container mx-auto p-4 items-center mt-24 xl:-mt-24 mb-12 xl:mb-0 justify-evenly h-screen "
           >
             <div className="w-80 xl:w-96">
               <img src={require(`${doughnut.img}`)} alt="doughnut" />
@@ -70,8 +70,10 @@ function Main() {
                       -
                     </button>
                   </div>
+                  <p className="flex items-center h-1 p-0">
+                    {doughnut.quantity}
+                  </p>
 
-                  <p>{doughnut.quantity}</p>
                   <div className="flex justify-center ">
                     <button
                       onClick={() => incrementCount(index)}
